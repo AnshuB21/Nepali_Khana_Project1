@@ -3,9 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nepali restaurant</title>
+    <link rel="stylesheet" href="index.css"/>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and page structure */
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            color: #333; 
+            position: relative;
+            min-height: 100vh;
+        }
+
+
+        /* Background video */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #fa60a5d5; /* Darker color for the main heading */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .header p {
+            font-size: 1.6rem;
+            color: #000000fa; /* Changed tagline color for better contrast */
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Grid for course cards */
+        .course-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 20px;
+            animation: zoomInCards 2s ease-in-out;
+        }
+
+        .course-card {
+            background-color: #fa60a5d5;;
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            transform: scale(0.8); /* Initial small size */
+            animation: zoomIn 0.8s ease-in-out forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Remove underline from links */
+        .course-card a {
+            text-decoration: none;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .course-card h2 {
+            font-size: 1.8rem;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-color: #fa60a5d5;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Instruction for selecting a course */
+        .instruction {
+            font-size: 1.5rem;
+            color: #333;
+            margin-top: 30px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInText 1.5s ease-in-out forwards 1.5s; /* Animation with delay */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes zoomInCards { 
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <div>
+        <h3>The Nepali Resturant</h3>
+        <img src="./pics/OIP.png" alt="Logo"/>
+    </div>
+        <button><a href="Contact/Contact.html" > <h4>Contact us</h4></a></button>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fa60a5d5" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,229.3C640,245,800,203,960,202.7C1120,203,1280,245,1360,266.7L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+    </nav>
+    <!-- Use getwaves.io for the wave format -->
     
+    <!-- Background video -->
+    <video autoplay muted loop class="background-video">
+        <source src="./pics/Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header content -->
+    <header class="header">
+        <h1>The Taste of Nepal</h1>
+        <p>Explore diverse flavors of Nepali cusine filled with love</p>
+    </header>
+    <center>
+    <img class="homepageImage" src="./pics/Homepage.png" alt="HomePage Image"/>
+<p style="padding-right:100px ; padding-left: 100px; padding-top: 50px;padding-bottom: 50px; font-size: 1.2rem;"> A Nepalese restaurant is a place where you can enjoy traditional Nepalese cuisine, which is rich in flavors and reflects the country's cultural diversity. The restaurant may offer dishes made with fresh, local ingredients, and provide an authentic dining experience. A Nepalese restaurant is a place where you can enjoy traditional Nepalese cuisine, which is rich in flavors and reflects the country's cultural diversity. The restaurant may offer dishes made with fresh, local ingredients, and provide an authentic dining experience
+
+</p></center>
+
+    <!-- Course grid -->
+    <section class="course-grid">
+        <div class="course-card">
+            <a href="./Khana/Khana.html">
+                <img src="./pics/thakaliKhana.png" alt="Appetizers">
+                <h2>Main Khana</h2>
+            </a>
+        </div>
+        <div class="course-card">
+            <a href="./Nasta/Nasta.html">
+                <img src="./pics/DumAloo.png" alt="Curries">
+                <h2>Nasta</h2>
+            </a>
+        </div>
+        <div class="course-card">
+            <a href="./Momo/momo.html">
+                <img src="./pics/jholmomo.png" alt="Rice & Paratha">
+                <h2>Momo</h2>
+            </a>
+        </div>
+        <div class="course-card">
+            <a href="./StreetStyle/StreetStyle.html">
+                <img src="./pics/Bara.jpeg" alt="Desserts">
+                <h2>StreetStyle</h2>
+            </a>
+        </div>
+    </section>
+
+    <!-- Instruction message centered below the options -->
+    <p class="instruction">Please choose a course of meal from the options above:</p>
+
 </body>
 </html>

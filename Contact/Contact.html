@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(120deg, #fe89ec, #e8c2e1);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: backgroundMove 5s infinite alternate ease-in-out;
+        }
+        @keyframes backgroundMove {
+            0% { background-position: left; }
+            100% { background-position: right; }
+        }
+        .contact-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 500px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .contact-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            background: #66a6ff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            animation: floatIcon 2s infinite alternate ease-in-out;
+        }
+        @keyframes floatIcon {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+        .contact-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #66a6ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background: #557dff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div><span class="icon">📍</span> Baneshwor, Kathmandu, Nepal</div>
+            <div><span class="icon">📧</span> NepaliResturant@gmail.com</div>
+            <div><span class="icon">📞</span> +123 456 7890</div>
+        </div>
+        <button class="contact-btn">Get in Touch</button>
+    </div>
+</body>
+</html>
