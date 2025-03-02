@@ -1,3 +1,5 @@
+/* Css for the Nav Bar and the center image */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -13,6 +15,7 @@ nav div {
     align-items: center;
   
 }
+/* Link on the Website Name */
 nav div a {
     text-decoration: none;
     z-index: 1;
@@ -53,12 +56,13 @@ nav button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
+/* Center homepage image */
 .homepageImage{
     width: 60%;
     margin-top: 0;
 }
 
-
+/* The wave format css */
 .wave {
     position: absolute;
     bottom: -1px; /* Slight overlap to remove gaps */
@@ -68,7 +72,7 @@ nav button:hover {
     height: auto;
     transform: rotate(180deg);
 }
-
+/* The nav bar becomes straigh in the smal screen size */
 @media screen and (max-width: 980px) {
     .wave{
         display: none;
