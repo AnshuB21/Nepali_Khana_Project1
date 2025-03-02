@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Tikka Masala Recipe - The Great Indian Cuisine</title>
+    <title>Selroti Recipe</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
@@ -15,21 +15,11 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
-        .background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 0.5;
-        }
         .close-button {
             position: absolute;
             top: 20px;
             right: 20px;
-            background-color: #b03a2e;
+            background-color: #fa60a5d5;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -40,7 +30,7 @@
             text-decoration: none;
         }
         .close-button:hover {
-            background-color: #e67e22;
+            background-color: #f303d3;
         }
         .container {
             max-width: 900px;
@@ -54,16 +44,16 @@
         }
         .header h1 {
             font-size: 2.5rem;
-            color: #b03a2e;
+            color: #fa60a5d5;
             margin-bottom: 10px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         .header p {
             font-size: 1.1rem;
-            color: red;
+            color: rgba(255, 1, 187, 0.947);
         }
         .food-image {
-            width: 100%;
+            width: 60%;
             border-radius: 15px;
             margin: 20px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -77,18 +67,19 @@
         .nav-menu a {
             text-decoration: none;
             color: #fff;
-            background-color: #b03a2e;
+            background-color: #fa60a5d5;
             padding: 10px 20px;
             border-radius: 25px;
             transition: background-color 0.3s ease;
         }
-        .nav-menu a:hover { background-color: #e67e22; }
+        .nav-menu a:hover { background-color: #fa60a5a0 }
         section { margin-bottom: 30px; }
         .section-content {
             background-color: rgba(255, 204, 153, 0.1);
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            
         }
         .ingredients, .nutrition {
             display: grid;
@@ -96,34 +87,33 @@
             gap: 15px;
         }
         .ingredients li, .nutrition p, .steps p {
-            background-color: rgba(255, 204, 153, 0.1);
+            background-color: rgba(255, 153, 209, 0.1);
             padding: 10px;
             border-radius: 8px;
             list-style-type: none;
             transition: background-color 0.3s ease;
         }
         .ingredients li:hover, .nutrition p:hover, .steps p:hover {
-            background-color: rgba(255, 204, 153, 0.9);
+            background-color: #fa60a5a0;
             color: #b03a2e;
+            cursor: pointer;
         }
         @media (max-width: 600px) {
             .nav-menu { flex-direction: column; gap: 10px; }
             .ingredients, .nutrition { grid-template-columns: 1fr; }
         }
+    
     </style>
 </head>
 <body>
-    <video autoplay muted loop class="background-video">
-        <source src="background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
 
-    <a href="Nasta.html" class="close-button">X</a>
+    
 
     <div class="container">
+        <a href="Nasta.html" class="close-button">X</a>
         <div class="header">
-            <h1>Chicken Tikka Masala Recipe</h1>
-            <p>Classic Indian chicken tikka masala cooked to perfection</p>
+            <h1> Selroti </h1>
+            <p>The most celebrated food, served in every festival</p>
         </div>
 
         <img src="../pics/Selroti.jpeg" alt="Delicious Chicken Tikka Masala" class="food-image">
@@ -138,53 +128,50 @@
         <section id="preparation">
             <h2>Preparation Time & Servings</h2>
             <div class="section-content">
-                <p><strong>Preparation Time:</strong> 35 minutes</p>
-                <p><strong>Cook Time:</strong> 20 minutes</p>
-                <p><strong>Servings:</strong> 4 servings</p>
+                <p><strong>Preparation Time:</strong> 4 hours (including soaking time)</p>
+                <p><strong>Cook Time:</strong> 30 minutes</p>
+                <p><strong>Servings:</strong> 6 servings</p>
             </div>
         </section>
-
+        
         <section id="ingredients">
             <h2>Ingredients</h2>
             <ul class="ingredients section-content">
-                <li>500g chicken breast (cubed)</li>
-                <li>1 cup plain yogurt</li>
-                <li>2 tablespoons tikka masala paste</li>
-                <li>1 tablespoon ginger-garlic paste</li>
-                <li>1 onion (chopped)</li>
-                <li>1 can tomato puree</li>
-                <li>1/2 cup cream</li>
-                <li>1 teaspoon cumin seeds</li>
-                <li>1 teaspoon garam masala</li>
-                <li>1/2 teaspoon turmeric</li>
-                <li>1/2 teaspoon chili powder</li>
-                <li>Salt to taste</li>
-                <li>Fresh cilantro for garnish</li>
+                <li>2 cups rice (soaked for 4 hours)</li>
+                <li>1/2 cup sugar</li>
+                <li>1/2 cup milk (or water)</li>
+                <li>2 tablespoons ghee (or butter)</li>
+                <li>1/2 teaspoon cardamom powder</li>
+                <li>1 ripe banana (optional, for softness)</li>
+                <li>1/4 teaspoon salt</li>
+                <li>Oil (for deep frying)</li>
             </ul>
         </section>
-
+        
         <section id="steps">
             <h2>Steps</h2>
             <div class="steps section-content">
-                <p><strong>Step 1:</strong> Marinate chicken in yogurt, tikka masala paste, and salt for 30 minutes.</p>
-                <p><strong>Step 2:</strong> Sauté cumin seeds, onions, and ginger-garlic paste in Instant Pot until golden.</p>
-                <p><strong>Step 3:</strong> Add tomato puree, spices, and chicken. Stir well.</p>
-                <p><strong>Step 4:</strong> Pressure cook for 7 minutes and let release naturally.</p>
-                <p><strong>Step 5:</strong> Stir in cream and garam masala. Simmer and garnish with cilantro.</p>
+                <p><strong>Step 1:</strong> Soak rice in water for at least 4 hours, then drain.</p><br>
+                <p><strong>Step 2:</strong> Blend the soaked rice with sugar, milk, ghee, cardamom, salt, and banana (if using) into a smooth batter.</p><br>
+                <p><strong>Step 3:</strong> Let the batter rest for 30 minutes for better texture.</p><br>
+                <p><strong>Step 4:</strong> Heat oil in a deep pan. Pour the batter in a circular motion to form ring shapes.</p><br>
+                <p><strong>Step 5:</strong> Fry until golden brown, flipping to cook evenly.</p><br>
+                <p><strong>Step 6:</strong> Remove from oil and drain excess oil on paper towels. Serve warm.</p><br>
             </div>
         </section>
-
+        
         <section id="nutrition">
             <h2>Nutrition Information</h2>
             <div class="nutrition section-content">
-                <p>Calories: 300 kcal</p>
-                <p>Carbohydrates: 10g</p>
-                <p>Protein: 25g</p>
-                <p>Fat: 15g</p>
-                <p>Sodium: 450mg</p>
-                <p>Fiber: 3g</p>
+                <p>Calories: 250 kcal</p>
+                <p>Carbohydrates: 50g</p>
+                <p>Protein: 4g</p>
+                <p>Fat: 6g</p>
+                <p>Sodium: 150mg</p>
+                <p>Fiber: 2g</p>
             </div>
         </section>
+        
     </div>
 </body>
 </html>

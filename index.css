@@ -21,7 +21,8 @@ nav div a {
 nav h3 {
    margin-left: 4rem;
     font-size: 2.5rem;
-    font-family:cursive;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.683);
     z-index: 1;
 }
 
@@ -36,7 +37,7 @@ nav img {
 nav button {
     background-color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 1vw 1.3vw;
     cursor: pointer;
     border-radius: 5px;
     z-index: 1;
@@ -67,3 +68,22 @@ nav button:hover {
     height: auto;
     transform: rotate(180deg);
 }
+
+@media screen and (max-width: 980px) {
+    .wave{
+        display: none;
+    }
+    nav h3{
+        margin:0;
+        font-size: 20px;
+    }
+    nav img{
+        display: none;
+    }
+    nav{
+        background-color:#fa60a5d5; ;
+    }
+
+}
+     
+/* Useful step, learned new thing,  font-size: clamp(8px, 1.5vw, 18px); */

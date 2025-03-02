@@ -3,9 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhedo</title>
+    <title> Dhedo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #333;
+            position: relative;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #fa60a5d5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .close-button:hover {
+            background-color: #f303d3;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fa60a5d5;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: rgba(255, 1, 187, 0.947);
+        }
+        .food-image {
+            width: 60%;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #fa60a5d5;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-menu a:hover { background-color: #fa60a5a0 }
+        section { margin-bottom: 30px; }
+        .section-content {
+            background-color: rgba(255, 204, 153, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+        .ingredients, .nutrition {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .ingredients li, .nutrition p, .steps p {
+            background-color: rgba(255, 153, 209, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            list-style-type: none;
+            transition: background-color 0.3s ease;
+        }
+        .ingredients li:hover, .nutrition p:hover, .steps p:hover {
+            background-color: #fa60a5a0;
+            color: #b03a2e;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .nav-menu { flex-direction: column; gap: 10px; }
+            .ingredients, .nutrition { grid-template-columns: 1fr; }
+        }
+    
+    </style>
 </head>
 <body>
+
     
+
+    <div class="container">
+        <a href="khana.html" class="close-button">X</a>
+        <div class="header">
+            <h1>Dhedo set</h1>
+            <p>Traditional nepali food eaten in himalayas with chicken soup</p>
+        </div>
+
+        <img src="../pics/dehdo.png" alt="Dhedo" class="food-image" style="width: 60%;"/>
+
+        <div class="nav-menu">
+            <a href="#preparation">Preparation</a>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#steps">Steps</a>
+            <a href="#nutrition">Nutrition</a>
+        </div>
+
+        <section id="preparation">
+            <h2>Preparation Time & Servings</h2>
+            <div class="section-content">
+                <p><strong>Preparation Time:</strong> 55 minutes</p>
+                <p><strong>Cook Time:</strong> 35 minutes</p>
+                <p><strong>Servings:</strong> 3 servings</p>
+            </div>
+        </section>
+        
+        <section id="ingredients">
+            <h2>Ingredients</h2>
+            <ul class="ingredients section-content">
+                <li>2 cups steamed corn flour</li>
+                <li>1 cup lentil soup (dal)</li>
+                <li>200g grilled or fried meat (goat, chicken, or pork)</li>
+                <li>1 cup stir-fried spinach (saag)</li>
+                <li>1 cup spicy potato curry (aalu tarkari)</li>
+                <li>1/2 cup fermented mustard greens (gundruk)</li>
+                <li>1/2 cup radish pickle (mula ko achar)</li>
+                <li>1/2 cup fried soybean (bhatmas sadeko)</li>
+                <li>1/2 cup tomato chutney (golbheda ko achar)</li>
+                <li>1 teaspoon clarified butter (ghee)</li>
+                <li>Salt and pepper to taste</li>
+                <li>Fresh cilantro for garnish</li>
+            </ul>
+        </section>
+        
+        <section id="steps">
+            <h2>Steps</h2>
+            <div class="steps section-content">
+                <p><strong>Step 1:</strong> Cook the lentils with salt and turmeric until soft, then blend for a smooth consistency.</p><br>
+                <p><strong>Step 2:</strong> Prepare the aalu tarkari by sautéing potatoes with onions, tomatoes, and spices.</p><br>
+                <p><strong>Step 3:</strong> Stir-fry spinach with garlic, salt, and a little oil.</p><br>
+                <p><strong>Step 4:</strong> Grill or fry the meat with seasonings of your choice.</p><br>
+                <p><strong>Step 5:</strong> Prepare gundruk by soaking and stir-frying with mustard oil and spices.</p><br>
+                <p><strong>Step 6:</strong> Mix fried soybeans with mustard oil, chili, and salt for bhatmas sadeko.</p><br>
+                <p><strong>Step 7:</strong> Arrange all items on a plate with steamed rice in the center.</p><br>
+                <p><strong>Step 8:</strong> Drizzle ghee over the lentil soup and serve everything together.</p><br>
+            </div>
+        </section>
+        
+        <section id="nutrition">
+            <h2>Nutrition Information</h2>
+            <div class="nutrition section-content">
+                <p>Calories: 600 kcal</p>
+                <p>Carbohydrates: 70g</p>
+                <p>Protein: 30g</p>
+                <p>Fat: 18g</p>
+                <p>Sodium: 550mg</p>
+                <p>Fiber: 10g</p>
+            </div>
+        </section>
+        
+    </div>
 </body>
 </html>
